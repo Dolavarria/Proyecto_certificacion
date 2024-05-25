@@ -1,0 +1,35 @@
+[
+    {
+        "model": "libros.Libros",
+        "fields": {
+            "titulo": "Cien años de soledad",
+            "descripcion": "La obra cumbre del premio Nobel de Literatura Gabriel García Márquez.",
+            "ano_publicacion": "1967-05-30",
+            "portada_url": "https://example.com/portada_cien_anios_de_soledad.jpg",
+            "genero": 1,
+            "autor": "Gabriel García Márquez"
+        }
+    },
+    {
+        "model": "libros.Libros",
+        "fields": {
+            "titulo": "Don Quijote de la Mancha",
+            "descripcion": "La obra maestra de Miguel de Cervantes que narra las aventuras del ingenioso hidalgo Don Quijote.",
+            "ano_publicacion": "1605-01-16",
+            "portada_url": "https://example.com/portada_don_quijote.jpg",
+            "genero": 2,
+            "autor": "Miguel de Cervantes"
+        }
+    },
+    {
+        "model": "libros.Libros",
+        "fields": {
+            "titulo": "Rayuela",
+            "descripcion": "La novela del escritor argentino Julio Cortázar, considerada una de las obras más importantes del siglo XX.",
+            "ano_publicacion": "1963-01-01",
+            "portada_url": "https://example.com/portada_rayuela.jpg",
+            "genero": 3,
+            "autor": "Julio Cortázar"
+        }
+    }
+]

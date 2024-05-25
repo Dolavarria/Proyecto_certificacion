@@ -1,0 +1,21 @@
+[
+    {
+        "model": "libros.Autores",
+        "fields": {
+            "nombre": "Gabriel Garcia Marquez"            
+        }
+    },
+    {
+        "model": "libros.Autores",
+        "fields": {           
+            "nombre": "Miguel de Cervantes"
+        }
+    },
+    {
+        "model": "libros.Autores",
+        "fields": {
+            "nombre": "Julio Cortázar"
+        }
+    }
+]
+
