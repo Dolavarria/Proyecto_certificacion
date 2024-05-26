@@ -7,7 +7,7 @@
             "ano_publicacion": "1967-05-30",
             "portada_url": "https://example.com/portada_cien_anios_de_soledad.jpg",
             "genero": 1,
-            "autor": "Gabriel García Márquez"
+            "autor": 1
         }
     },
     {
@@ -18,7 +18,7 @@
             "ano_publicacion": "1605-01-16",
             "portada_url": "https://example.com/portada_don_quijote.jpg",
             "genero": 2,
-            "autor": "Miguel de Cervantes"
+            "autor": 2
         }
     },
     {
@@ -29,7 +29,7 @@
             "ano_publicacion": "1963-01-01",
             "portada_url": "https://example.com/portada_rayuela.jpg",
             "genero": 3,
-            "autor": "Julio Cortázar"
+            "autor": 3
         }
     }
 ]
