@@ -77,12 +77,12 @@ WSGI_APPLICATION = 'resena_libros.wsgi.application'
 #DATABASE para conectarme a base de datos mysql
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
+        'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'resena_libross',
-        'USER': 'root',
+        'USER': 'postgres',
         'PASSWORD': 'Diego8134',
         'HOST': 'localhost',
-        'PORT': '3306',
+        'PORT': '5432',
 }
     }
 
