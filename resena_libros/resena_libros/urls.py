@@ -16,7 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,include
-from libros.views import indice,home,register,contacto_exito,libro_nuevo,contacto
+from libros.views import indice,home,register,contacto_exito,libro_nuevo,contacto,libro_detalle,resenas,mis_resenas,autor,seguir_autor,dejar_seguir_autor,autores_seguidos
 
 urlpatterns = [
     path('accounts/', include('django.contrib.auth.urls')),
@@ -27,6 +27,13 @@ urlpatterns = [
     path('contacto/',contacto,name="contacto"),
     path('contacto/exito/',contacto_exito, name="contacto_success"), 
     path('libro/nuevo/',libro_nuevo,name='libro_nuevo'),
+    path('libro/', libro_detalle, name='libro'),
+    path('libro/<int:libro_id>/resenas', resenas, name='resenas'),
+    path('mis_resenas/', mis_resenas, name='mis_resenas'),
+    path('autor/<int:autor_id>/', autor, name='autor'),
+    path('autor/<int:autor_id>/seguir', seguir_autor, name='seguir_autor'),
+    path('autor/<int:autor_id>/dejar_seguir', dejar_seguir_autor, name='dejar_seguir_autor'),
+    path('autores_seguidos', autores_seguidos, name='autores_seguidos'),
 
 
    

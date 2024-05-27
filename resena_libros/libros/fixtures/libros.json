@@ -4,7 +4,7 @@
         "fields": {
             "titulo": "Cien años de soledad",
             "descripcion": "La obra cumbre del premio Nobel de Literatura Gabriel García Márquez.",
-            "ano_publicacion": "1967-05-30",
+            "ano_publicacion": "1967",
             "portada_url": "https://3.bp.blogspot.com/-dwgBP4EyTJM/XBGPjuNNh9I/AAAAAAAAAKM/Vbyt8BkL1m4L_mY9ZWHw_yU6FeKez6reQCLcBGAs/w144-h144-p-k-no-nu/libro-cien-anos-de-soledad.jpg",
             "genero": 1,
             "autor": 1
@@ -15,7 +15,7 @@
         "fields": {
             "titulo": "Don Quijote de la Mancha",
             "descripcion": "La obra maestra de Miguel de Cervantes que narra las aventuras del ingenioso hidalgo Don Quijote.",
-            "ano_publicacion": "1605-01-16",
+            "ano_publicacion": "1605",
             "portada_url": "https://img-static.ivoox.com/index.php?w=145&h=145&url=https://static-1.ivoox.com/canales/c/e/0/6/ce0699cb66091655318a37e8ed1cc9e2_XXL.jpg",
             "genero": 2,
             "autor": 2
@@ -26,7 +26,7 @@
         "fields": {
             "titulo": "Rayuela",
             "descripcion": "La novela del escritor argentino Julio Cortázar, considerada una de las obras más importantes del siglo XX.",
-            "ano_publicacion": "1963-01-01",
+            "ano_publicacion": "1963",
             "portada_url": "https://portallibros.com/wp-content/uploads/2021/08/rayuelaaaa-120x190.jpg",
             "genero": 3,
             "autor": 3

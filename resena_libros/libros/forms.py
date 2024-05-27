@@ -15,12 +15,16 @@ class ContactosModelForm(forms.ModelForm):
 class ReseñasModelForm(forms.ModelForm):
     class Meta:
         model = Reseñas
-        fields = ['libro', 'calificacion', 'comentario']
+        fields = ['calificacion', 'comentario']
         
 class LibrosModelForm(forms.ModelForm):
     class Meta:
         model = Libros
         fields = ['titulo', 'descripcion', 'ano_publicacion', 'portada_url', 'genero', 'autor']
+        labels = {
+            'ano_publicacion': 'Año de publicación',
+            
+        }
 
 class RegisterModelForm(UserCreationForm):
     class Meta:

@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<main class="main container mt-5">
+    <h1>Mis reseñas</h1>
+    {% for resena in resenas %}
+    <div class="card mb-3">
+        <div class="card-body">
+            <h5 class="card-title">{{ resena.libro.titulo }}</h5>
+            <p class="card-text"><small class="text-muted">Calificación: {{ resena.calificacion }}</small></p>
+            <p class="card-text">{{ resena.comentario }}</p>
+
+        </div>
+    </div>
+    {% endfor %}
+</main>
+{% endblock %}

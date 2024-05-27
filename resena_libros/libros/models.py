@@ -11,14 +11,18 @@ class Contactos(models.Model):
 
 class Generos(models.Model):
     nombre=models.CharField(max_length=50)
-    
+    def __str__(self):
+        return self.nombre
+       
 class Autores(models.Model):
     nombre=models.CharField(max_length=50)
+    def __str__(self):
+        return self.nombre
 
 class Libros(models.Model):
     titulo=models.CharField(max_length=50)
     descripcion=models.TextField()	
-    ano_publicacion=models.DateField()
+    ano_publicacion=models.IntegerField()
     portada_url=models.URLField()
     genero=models.ForeignKey(Generos, on_delete=models.CASCADE)
     autor=models.ForeignKey(Autores, on_delete=models.CASCADE)

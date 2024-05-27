@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<main class="main container mt-5">
+    <h1>{{ autor.nombre }}</h1>
+    {% if autor in request.user.autores_seguidos.all %}
+        <a href="{% url 'dejar_seguir_autor' autor.id %}" class="btn btn-primary">Dejar de seguir</a>
+    {% else %}
+        <a href="{% url 'seguir_autor' autor.id %}" class="btn btn-primary">Seguir</a>
+    {% endif %}
+    {% for libro in libros %}
+    <div class="card mb-3">
+        <div class="card-body">
+            <h5 class="card-title">{{ libro.titulo }}</h5>
+            <p class="card-text">{{ libro.descripcion }}</p>
+        </div>
+    </div>
+    {% endfor %}
+</main>
+{% endblock %}

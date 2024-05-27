@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<main class="main container mt-5">
+    <h1>Autores seguidos</h1>
+    <ul>
+        {% for autor in autores %}
+        <li>
+            <a href="{% url 'autor' autor.id %}">{{ autor.nombre }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</main>
+{% endblock %}
