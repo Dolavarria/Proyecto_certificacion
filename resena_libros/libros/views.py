@@ -66,6 +66,7 @@ def libro_detalle(request):
 @login_required
 def resenas(request, libro_id):
     libro = Libros.objects.get(id=libro_id)
+    print(libro.id)  # Imprime el ID del libro en la consola
     if request.method == 'POST':
         form = ReseñasModelForm(request.POST)
         if form.is_valid():

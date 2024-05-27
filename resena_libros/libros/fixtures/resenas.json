@@ -1,0 +1,35 @@
+[
+    {
+        "model": "libros.reseñas",
+        "pk": 1,
+        "fields": {
+            "libro": 1,
+            "usuario": 1,
+            "calificacion": 5,
+            "comentario": "¡Este libro es increíble!",
+            "fecha_resena": "2022-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "libros.reseñas",
+        "pk": 2,
+        "fields": {
+            "libro": 2,
+            "usuario": 1,
+            "calificacion": 4,
+            "comentario": "Me gustó mucho este libro.",
+            "fecha_resena": "2022-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "libros.reseñas",
+        "pk": 3,
+        "fields": {
+            "libro": 1,
+            "usuario": 2,
+            "calificacion": 3,
+            "comentario": "El libro es bueno, pero no es mi favorito.",
+            "fecha_resena": "2022-01-01T00:00:00Z"
+        }
+    }
+]
