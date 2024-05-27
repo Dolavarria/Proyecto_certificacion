@@ -80,15 +80,29 @@ A modo de demostración, se muestra la sección de mis reseñas con el menu ante
 Instalar librerias necesarias contenidas en Requeriments.txt
 
 ```bash
-# pip install requeriments.txt
+pip install requeriments.txt
 ```
 
-Y así sucesivamente...
+Una vez instalado,  crearemos las migraciones
 
 ```bash
-# paso 2
+py manage.py makemigrations
 ```
+Aplicamos las migraciones
 
+```bash
+py manage.py migrate
+```
+Instalar librerias necesarias contenidas en Requeriments.txt
+
+```bash
+pip install requeriments.txt
+```
+Instalar librerias necesarias contenidas en Requeriments.txt
+
+```bash
+pip install requeriments.txt
+```
 ## Instrucciones para Ejecutar el Proyecto
 
 Instrucciones para ejecutar el proyecto una vez instalado.
