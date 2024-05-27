@@ -24,7 +24,6 @@ class Libros(models.Model):
     autor=models.ForeignKey(Autores, on_delete=models.CASCADE)
     
 class User(AbstractUser):
-    es_admin=models.BooleanField(default=False)
     autores_seguidos = models.ManyToManyField('Autores', related_name='seguidores')
     
 class Reseñas(models.Model):

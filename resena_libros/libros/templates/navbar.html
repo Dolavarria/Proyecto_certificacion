@@ -1,4 +1,3 @@
-{% load static %}
 
 <style>
     .ml-auto {
@@ -15,7 +14,7 @@
     }
     .btn-white {
         background-color: white;
-        color: black; 
+        color: black;          
         border: 2px solid #82d2ff;
     }
 
@@ -36,7 +35,10 @@
                 
                 {% if user.is_authenticated %}
                 <li class="nav-item">
-                    <a class="nav-link" href="http://127.0.0.1:8000/welcome/">Welcome</a>
+                    <a class="nav-link" href="http://127.0.0.1:8000/home/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'libro_nuevo' %}">Crea un nuevo libro</a>
                 </li>
                 {% endif %}
                 <li class="nav-item">
@@ -45,9 +47,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="http://127.0.0.1:8000/contacto/">Contacto</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="http://127.0.0.1:8000/ubicacion/">Ubicación</a>
-                </li>
+                
             </ul>
             <ul class="navbar-nav ml-auto">
                 {% if user.is_authenticated %}
