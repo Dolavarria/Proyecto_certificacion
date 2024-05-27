@@ -12,6 +12,8 @@ tenga funcionalidades específicas según su rol. Los usuarios tendrán la capac
 escribir y editar reseñas. Los administradores del sitio tendrán acceso completo
 
 ## Capturas de Pantalla del Proyecto
+Vista de inicio, solo está disponible el acceso a Home (contiene el listado de libros) 
+![image](https://github.com/Dolavarria/Proyecto_certificacion/assets/152653556/7785e223-02e8-4ed4-8674-af7a714404c1)
 
 
 
