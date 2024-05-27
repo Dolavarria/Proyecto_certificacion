@@ -16,9 +16,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,include
-from libros.views import indice,home,register,contacto_exito,libro_nuevo,contacto,libro_detalle,resenas,mis_resenas,autor,seguir_autor,dejar_seguir_autor,autores_seguidos
+from libros.views import indice,home,register,contacto_exito,libro_nuevo,contacto,libro_detalle,resenas,mis_resenas,autor,seguir_autor,dejar_seguir_autor,autores_seguidos,CustomLoginView
 
 urlpatterns = [
+    path('accounts/login/', CustomLoginView.as_view(), name='login'),
     path('accounts/', include('django.contrib.auth.urls')),
     path('admin/', admin.site.urls),
     path('',indice,name="indice"),

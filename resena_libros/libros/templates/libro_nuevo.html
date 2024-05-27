@@ -1,9 +1,38 @@
 {% extends 'base.html' %}
 {% block content %}
-  <h2>Nuevo Libro</h2>
-  <form method="POST">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit">Crear</button>
-  </form>
-{% endblock %}  
+  <div class="container mt-5 d-flex justify-content-center">
+    <div class="col-md-5">
+      <h2 class="text-center mb-4">Crear nuevo libro</h2>
+      <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <div class="mb-3">
+          <label for="{{ form.titulo.id_for_label }}" class="form-label">Título de libro</label>
+          {{ form.titulo }}
+        </div>
+        <div class="mb-3">
+          <label for="{{ form.descripcion.id_for_label }}" class="form-label">Descripción</label>
+          {{ form.descripcion }}
+        </div>
+        <div class="mb-3">
+          <label for="{{ form.portada_url.id_for_label }}" class="form-label">Imagen</label>
+          {{ form.portada_url }}
+        </div>
+        <div class="mb-3">
+          <label for="{{ form.genero.id_for_label }}" class="form-label">Género</label>
+          {{ form.genero }}
+        </div>
+        <div class="mb-3">
+          <label for="{{ form.autor.id_for_label }}" class="form-label">Autor</label>
+          {{ form.autor }}
+        </div>
+        <div class="mb-3">
+          <label for="{{ form.ano_publicacion.id_for_label }}" class="form-label">Año de publicación</label>
+          {{ form.ano_publicacion }}
+        </div>
+        <div class="text-center mb-5">
+          <button type="submit" class="btn btn-primary" style="background-color: #82d2ff; border: none;">Guardar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+{% endblock %}

@@ -7,10 +7,9 @@ from django.contrib.auth.forms import UserCreationForm
 from django.contrib.admin.views.decorators import staff_member_required
 from django.db.models import Q,Avg
 from django.shortcuts import get_object_or_404
-
-
+from django.contrib.auth.views import LoginView
 from .models import Libros, Autores, Generos, Reseñas,Contactos
-from .forms import ReseñasModelForm, ContactosModelForm,LibrosModelForm,RegisterModelForm
+from .forms import ReseñasModelForm, ContactosModelForm,LibrosModelForm,RegisterModelForm,CustomAuthenticationForm
 # Create your views here.
 
 #Permite registrar usuarios
@@ -24,6 +23,10 @@ def register(request):
     else:
         form = RegisterModelForm()  # Utiliza tu formulario personalizado aquí
     return render(request, 'register.html', {'form': form})
+
+class CustomLoginView(LoginView):
+    form_class = CustomAuthenticationForm
+    template_name = 'registration/login.html'
 
 #Index, pagina de inicio
 def indice(request):
