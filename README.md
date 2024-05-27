@@ -83,7 +83,7 @@ Instalar librerias necesarias contenidas en Requeriments.txt
 pip install requeriments.txt
 ```
 
-Una vez instalado,  crearemos las migraciones
+Una vez instalado,  crearemos una base de datos llamada resenas_libros en PostgreSQL, luego de esto podemos proceder a realizar las migraciones
 
 ```bash
 py manage.py makemigrations
@@ -93,56 +93,34 @@ Aplicamos las migraciones
 ```bash
 py manage.py migrate
 ```
-Instalar librerias necesarias contenidas en Requeriments.txt
-
+Agregamos un usuario Lector y otro Administrador
 ```bash
-pip install requeriments.txt
+py manage.py create_users
 ```
-Instalar librerias necesarias contenidas en Requeriments.txt
-
+Agregamos datos semilla para Autores,Generos y Libros
 ```bash
-pip install requeriments.txt
+py manage.py loaddata autor_generos_libros.json
 ```
-## Instrucciones para Ejecutar el Proyecto
-
-Instrucciones para ejecutar el proyecto una vez instalado.
-
+Agregamos datos semilla para Reseñas
 ```bash
-#
+py manage.py loaddata resenas.json
 ```
 
-## Instrucciones para Cargar la Base de Datos o Migrar los Modelos
-
-Instrucciones necesario para cargar la base de datos o migrar los modelos de datos.
-
+Ejecutamos el proyecto
 ```bash
-#
-```
-
-## Instrucciones para Cargar los Datos Semilla a la Base de Datos
-
-Comandos necesario para cargar los datos semilla a la base de datos.
-
-```bash
-# paso 1
-```
-
-Y así sucesivamente...
-
-```bash
-# paso 2
+py manage.py runserver
 ```
 
 ## Credenciales de Acceso
 
 ### Para Usuario Tipo Administrador
 
-- Email: administrador@mail.com
+- Usuario: Administrador
 - Contraseña: Abc123#
 
 ### Para Usuario Tipo Huésped
 
-- Email: huesped@mail.com
+- Usuario: Lector
 - Contraseña: Abc123#
 
 ## Autor
