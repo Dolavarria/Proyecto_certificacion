@@ -77,10 +77,10 @@ A modo de demostración, se muestra la sección de mis reseñas con el menu ante
 
 ## Instalación del Proyecto
 
-Una guía paso a paso sobre cómo configurar el entorno de desarrollo e instalar todas las dependencias.
+Instalar librerias necesarias contenidas en Requeriments.txt
 
 ```bash
-# paso 1
+# pip install requeriments.txt
 ```
 
 Y así sucesivamente...
